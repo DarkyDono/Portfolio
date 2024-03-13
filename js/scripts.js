@@ -67,13 +67,39 @@
     // Ifame Event Handler
     $(".first").on("click", function(){
       let url = '';
+      $('#vtuber').attr('vid',$(this).attr('cid'));
       if(($(this).attr('cid'))==1){
-        url = 'https://www.youtube.com/embed/1CG1Cyh6o1c';
+        url = 'https://www.youtube.com/embed/G-pBKZlb5Wo';
+        $("#vtuber").html("Vtuber - Rogue Liliana").attr("href", "https://rogueliliana.com");
+        $("#artist").html("Artist - Ji Kim").attr("href", "http://jikim.carrd.co");
       } else if(($(this).attr('cid'))==2){
-        url = 'https://www.youtube.com/embed/OhN18X8eibk';
+        url = 'https://www.youtube.com/embed/CLV3zEMcPlw';
+        $("#vtuber").html("Vtuber - Kitsune ").attr("href", "https://twitter.com/AikoKitome");
+        $("#artist").html("Artist - Rentya").attr("href", "https://twitter.com/ren_rentya");
+      }else if(($(this).attr('cid'))==3){
+        url = 'https://www.youtube.com/embed/805Z3WLlzN0';
+        $("#vtuber").html("Vtuber - Zephyr Koban").attr("href", "https://www.twitch.tv/ZephyrKoban");
+        $("#artist").html("Artist - JuberiiArt").attr("href", "https://twitter.com/JuberiiArt");
+      }
+      else if(($(this).attr('cid'))==4){
+        url = 'https://www.youtube.com/embed/S8yeG3kxnRM';
+        $("#vtuber").html("Vtuber - Octavia Astra").attr("href", "https://www.twitch.tv/octaviaastra");
+        $("#artist").html("Artist - Ji Kim").attr("href", "http://jikim.carrd.co");
+      }else if(($(this).attr('cid'))==5){
+        url = 'https://www.youtube.com/embed/oYGqo5OjDlo';
+        $("#vtuber").html("Vtuber - Mellowdius ").attr("href", "https://www.twitch.tv/mellowdius");
+        $("#artist").html("Artist - Ji Kim").attr("href", "http://jikim.carrd.co");
       }
       url += '?autoplay=1&mute=1&loop=1';
       $("#iframe").attr('src',url);
       $('#portfolioModal').modal('show');
+    });
+    $('#vtuber').click(function(){
+        window.open($("#vtuber").attr('href'), "_blank");
+
+    });
+    $('#artist').click(function(){
+        window.open($("#artist").attr('href'), "_blank");
+
     });
   })(jQuery); // End of use strict
