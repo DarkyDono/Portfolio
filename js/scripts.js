@@ -96,7 +96,7 @@
         $("#artist").html("Artist - Ji Kim").attr("href", "http://jikim.carrd.co");
       }else{
         $("#portfolioModalLabel").html("Ellcrys");
-        url = 'https://www.youtube.com/embed/oYGqo5OjDlo';
+        url = 'https://www.youtube.com/embed/g9lHUPIZJC4';
         $("#vtuber").html("Vtuber - Ellcrys ").attr("href", "https://www.twitch.tv/ellcrysvt");
         $("#artist").html("Artist - cheeren_art").attr("href", "https://cheerenart.carrd.co");
       }
