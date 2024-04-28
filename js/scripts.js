@@ -70,25 +70,35 @@
       $('#vtuber').attr('vid',$(this).attr('cid'));
       if(($(this).attr('cid'))==1){
         url = 'https://www.youtube.com/embed/G-pBKZlb5Wo';
+        $("#portfolioModalLabel").html("Rogue Liliana");
         $("#vtuber").html("Vtuber - Rogue Liliana").attr("href", "https://rogueliliana.com");
         $("#artist").html("Artist - Ji Kim").attr("href", "http://jikim.carrd.co");
       } else if(($(this).attr('cid'))==2){
+        $("#portfolioModalLabel").html("Kitsune");
         url = 'https://www.youtube.com/embed/CLV3zEMcPlw';
         $("#vtuber").html("Vtuber - Kitsune ").attr("href", "https://twitter.com/AikoKitome");
         $("#artist").html("Artist - Rentya").attr("href", "https://twitter.com/ren_rentya");
       }else if(($(this).attr('cid'))==3){
+        $("#portfolioModalLabel").html("Zephyr Koban");
         url = 'https://www.youtube.com/embed/805Z3WLlzN0';
         $("#vtuber").html("Vtuber - Zephyr Koban").attr("href", "https://www.twitch.tv/ZephyrKoban");
         $("#artist").html("Artist - JuberiiArt").attr("href", "https://twitter.com/JuberiiArt");
       }
       else if(($(this).attr('cid'))==4){
+        $("#portfolioModalLabel").html("Octavia Astra");
         url = 'https://www.youtube.com/embed/S8yeG3kxnRM';
         $("#vtuber").html("Vtuber - Octavia Astra").attr("href", "https://www.twitch.tv/octaviaastra");
         $("#artist").html("Artist - Ji Kim").attr("href", "http://jikim.carrd.co");
       }else if(($(this).attr('cid'))==5){
+        $("#portfolioModalLabel").html("Mellowdius");
         url = 'https://www.youtube.com/embed/oYGqo5OjDlo';
         $("#vtuber").html("Vtuber - Mellowdius ").attr("href", "https://www.twitch.tv/mellowdius");
         $("#artist").html("Artist - Ji Kim").attr("href", "http://jikim.carrd.co");
+      }else{
+        $("#portfolioModalLabel").html("Ellcrys");
+        url = 'https://www.youtube.com/embed/oYGqo5OjDlo';
+        $("#vtuber").html("Vtuber - Ellcrys ").attr("href", "https://www.twitch.tv/ellcrysvt");
+        $("#artist").html("Artist - cheeren_art").attr("href", "https://cheerenart.carrd.co");
       }
       url += '?autoplay=1&mute=1&loop=1';
       $("#iframe").attr('src',url);
